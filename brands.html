@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore Pal Optical's designer eyewear brands in Lexington, Kentucky." />
+    <title>Pal Optical | Brands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pinyon+Script&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body data-page="brands">
+    <header class="site-header" id="site-header">
+        <div class="container nav-bar">
+            <a class="brand" href="./index.html">
+                <span class="brand__script">Pal</span>
+                <span class="brand__name">Optical</span>
+            </a>
+            <nav class="nav nav--desktop" aria-label="Primary navigation">
+                <a class="nav-link" data-nav="home" href="./index.html">Home</a>
+                <a class="nav-link" data-nav="doctors" href="./index.html#doctors">Doctors</a>
+                <a class="nav-link" data-nav="brands" href="./brands.html">Brands</a>
+                <a class="nav-link" data-nav="contact" href="./contact.html">Contact</a>
+            </nav>
+            <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+        </div>
+        <nav class="nav nav--mobile" id="mobile-nav" aria-label="Mobile navigation">
+            <a class="mobile-link" data-nav="home" href="./index.html">Home</a>
+            <a class="mobile-link" data-nav="doctors" href="./index.html#doctors">Doctors</a>
+            <a class="mobile-link" data-nav="brands" href="./brands.html">Brands</a>
+            <a class="mobile-link" data-nav="contact" href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="page-sub">
+        <section class="container">
+            <div class="page-head reveal">
+                <p class="eyebrow">The Collection</p>
+                <h1 class="page-title">World Class<br><span>Designers.</span></h1>
+                <p class="sub-copy">We meticulously select brands that represent the pinnacle of eyewear design,
+                    quality, and innovation. Explore our current collection of designer frames.</p>
+            </div>
+            <div class="brand-grid" id="brand-grid"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-block">
+                <div class="footer-brand">
+                    <img src="./pallogo.gif" alt="Pal Optical Logo">
+                    <span>Pal Optical</span>
+                </div>
+                <p>Lexington's premier eyewear boutique, providing exceptional eye care and designer frames since our
+                    founding.</p>
+            </div>
+            <div class="footer-block">
+                <h3>Contact</h3>
+                <p>1555 E New Circle Rd Suite 146<br>Lexington, KY 40509</p>
+                <p>(859) 266-3003<br><span>Fax# (859) 266-9504</span><br><span>Exams# (859) 269-6921</span></p>
+            </div>
+            <div class="footer-block">
+                <h3>Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Pal Optical. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="./index.html">Privacy Policy</a>
+                <a href="./index.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

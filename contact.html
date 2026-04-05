@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Visit or contact Pal Optical in Lexington, Kentucky." />
+    <title>Pal Optical | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pinyon+Script&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body data-page="contact">
+    <header class="site-header" id="site-header">
+        <div class="container nav-bar">
+            <a class="brand" href="./index.html">
+                <span class="brand__script">Pal</span>
+                <span class="brand__name">Optical</span>
+            </a>
+            <nav class="nav nav--desktop" aria-label="Primary navigation">
+                <a class="nav-link" data-nav="home" href="./index.html">Home</a>
+                <a class="nav-link" data-nav="doctors" href="./index.html#doctors">Doctors</a>
+                <a class="nav-link" data-nav="brands" href="./brands.html">Brands</a>
+                <a class="nav-link" data-nav="contact" href="./contact.html">Contact</a>
+            </nav>
+            <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+        </div>
+        <nav class="nav nav--mobile" id="mobile-nav" aria-label="Mobile navigation">
+            <a class="mobile-link" data-nav="home" href="./index.html">Home</a>
+            <a class="mobile-link" data-nav="doctors" href="./index.html#doctors">Doctors</a>
+            <a class="mobile-link" data-nav="brands" href="./brands.html">Brands</a>
+            <a class="mobile-link" data-nav="contact" href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="page-sub">
+        <section class="container">
+            <div class="contact-hero reveal">
+                <div class="contact-hero__copy">
+                    <p class="eyebrow">Get in Touch</p>
+                    <h1 class="contact-heading">Visit Our<br><span>Optical Shop.</span></h1>
+                    <p class="sub-copy">Located in the Woodhill Circle Plaza right past the Richmond Rd exit on New
+                        Circle Rd, we're ready to help you see the world more clearly.</p>
+                    <div class="contact-stat-grid" id="contact-stat-grid"></div>
+                </div>
+                <div class="contact-hero__image">
+                    <img src="./pal2.png" alt="Pal Optical storefront">
+                </div>
+            </div>
+
+            <div class="contact-layout">
+                <div class="reveal">
+                    <div class="contact-detail-grid">
+                        <div>
+                            <h2 class="minor-heading">Location</h2>
+                            <div class="icon-row">
+                                <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7zm0 9.5A2.5 2.5 0 1 0 12 6.5a2.5 2.5 0 0 0 0 5z">
+                                        </path>
+                                    </svg></div>
+                                <div class="icon-copy">
+                                    <p class="location-card__title">Pal Optical</p>
+                                    <p>1555 E New Circle Rd Suite 146</p>
+                                    <p>Lexington, KY 40509</p>
+                                </div>
+                            </div>
+
+                            <div class="map-stack">
+                                <div class="map-frame">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.3653456789!2d-84.460!3d38.030!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884244f7b0000001%3A0x0!2zMTU1NSBFIE5ldyBDaXJjbGUgUmQgIzE0NiwgTGV4aW5ndG9uLCBLWSA0MDUwOQ!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                        title="Pal Optical Location"></iframe>
+                                </div>
+
+                                <form id="route-form" class="route-card">
+                                    <div class="route-box">
+                                        <h3>Get Directions</h3>
+                                        <div class="route-row">
+                                            <input id="start-address" type="text" placeholder="Starting address...">
+                                            <button class="route-button" type="submit">Route</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="minor-heading">Hours of Operation</h2>
+                            <div class="hours-list" id="hours-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal">
+                    <div class="form-card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-grid">
+                                <label class="form-field">
+                                    <span class="field-label">Name</span>
+                                    <input type="text" name="name" required>
+                                </label>
+                                <label class="form-field">
+                                    <span class="field-label">Email</span>
+                                    <input type="email" name="email" required>
+                                </label>
+                            </div>
+                            <label class="form-field form-field--full">
+                                <span class="field-label">Message</span>
+                                <textarea name="message" rows="4" required></textarea>
+                            </label>
+                            <button class="button form-submit" type="submit">Send Inquiry</button>
+                            <p class="form-status" id="form-status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-block">
+                <div class="footer-brand">
+                    <img src="./pallogo.gif" alt="Pal Optical Logo">
+                    <span>Pal Optical</span>
+                </div>
+                <p>Lexington's premier eyewear boutique, providing exceptional eye care and designer frames since our
+                    founding.</p>
+            </div>
+            <div class="footer-block">
+                <h3>Contact</h3>
+                <p>1555 E New Circle Rd Suite 146<br>Lexington, KY 40509</p>
+                <p>(859) 266-3003<br><span>Fax# (859) 266-9504</span><br><span>Exams# (859) 269-6921</span></p>
+            </div>
+            <div class="footer-block">
+                <h3>Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Pal Optical. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="./index.html">Privacy Policy</a>
+                <a href="./index.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
