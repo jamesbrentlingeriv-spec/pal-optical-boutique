@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./pallogo.gif" alt="Pal Optical Boutique Logo" width="200" />
+   <img src="./pal.png" alt="Pal Optical Boutique Logo" width="200" />
   
   # 💎 Pal Optical Boutique 💎
   
@@ -11,27 +11,37 @@
   [![Motion](https://img.shields.io/badge/Motion-000000?style=for-the-badge&logo=framer&logoColor=white)](https://motion.dev/)
   [![License](https://img.shields.io/badge/License-Apache_2.0-0F52BA?style=for-the-badge)](./LICENSE)
 
-  ---
+---
 
-  *Experience the pinnacle of luxury eyewear and professional eye care in the heart of Lexington, KY.*
+_Experience the pinnacle of luxury eyewear and professional eye care in the
+heart of Lexington, KY._
 
 </div>
 
 ## 🔷 Overview
 
-Pal Optical Boutique is a modern, high-end web application designed for a premium eyewear boutique. It features a sophisticated "Sapphire Blue & White" aesthetic that reflects the professional and luxury nature of the designer brands it carries.
+Pal Optical Boutique is a modern, high-end web application designed for a
+premium eyewear boutique. It features a sophisticated "Sapphire Blue & White"
+aesthetic that reflects the professional and luxury nature of the designer
+brands it carries.
 
 ## 🏆 Key Features
 
-- **💎 Designer Showcases**: High-resolution galleries of premium eyewear brands.
-- **📅 Professional Care**: Information on on-site eye doctors and professional consultations.
-- **🎭 Fluid Animations**: Seamless page transitions and interactive elements powered by `motion`.
-- **📱 Fully Responsive**: A flawless experience across mobile, tablet, and desktop devices.
-- **📍 Local Presence**: Integrated contact and location information for the Lexington boutique.
+- **💎 Designer Showcases**: High-resolution galleries of premium eyewear
+  brands.
+- **📅 Professional Care**: Information on on-site eye doctors and professional
+  consultations.
+- **🎭 Fluid Animations**: Seamless page transitions and interactive elements
+  powered by `motion`.
+- **📱 Fully Responsive**: A flawless experience across mobile, tablet, and
+  desktop devices.
+- **📍 Local Presence**: Integrated contact and location information for the
+  Lexington boutique.
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Frontend**: [React 19](https://react.dev/) +
+  [TypeScript](https://www.typescriptlang.org/)
 - **Build Tool**: [Vite 6](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 - **Animations**: [Motion](https://motion.dev/) (formerly Framer Motion)
@@ -48,17 +58,20 @@ Pal Optical Boutique is a modern, high-end web application designed for a premiu
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/pal-optical-boutique.git
    cd pal-optical-boutique
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
@@ -82,7 +95,8 @@ Pal Optical Boutique is a modern, high-end web application designed for a premiu
 
 ## 📜 License
 
-This project is licensed under the **Apache License 2.0**. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the **Apache License 2.0**. See the
+[LICENSE](./LICENSE) file for details.
 
 ---
 

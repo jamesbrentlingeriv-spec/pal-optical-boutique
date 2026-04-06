@@ -332,6 +332,56 @@ function setupHashScroll() {
   }
 }
 
+function setupPolicyModal() {
+  const triggers = document.querySelectorAll("[data-policy-trigger]");
+  const modals = Array.from(document.querySelectorAll(".policy-modal"));
+  if (!modals.length || !triggers.length) {
+    return;
+  }
+
+  const closeAllModals = () => {
+    modals.forEach((modal) => {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+    });
+    document.body.classList.remove("has-modal-open");
+  };
+
+  const openModal = (modal) => {
+    closeAllModals();
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("has-modal-open");
+  };
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", (event) => {
+      event.preventDefault();
+      const modalId = trigger.getAttribute("href")?.replace("#", "") || "";
+      const modal = modalId ? document.getElementById(modalId) : null;
+      if (modal instanceof HTMLElement) {
+        openModal(modal);
+      }
+    });
+  });
+
+  modals.forEach((modal) => {
+    const closeControls = modal.querySelectorAll("[data-policy-close]");
+    closeControls.forEach((control) => {
+      control.addEventListener("click", closeAllModals);
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      modals.some((modal) => modal.classList.contains("is-open"))
+    ) {
+      closeAllModals();
+    }
+  });
+}
+
 function initialize() {
   setActiveNav();
   setupMenu();
@@ -344,6 +394,7 @@ function initialize() {
   setupContactForm();
   setupReveal();
   setupHashScroll();
+  setupPolicyModal();
   updateHeaderTheme();
 
   window.addEventListener("scroll", updateHeaderTheme, { passive: true });
